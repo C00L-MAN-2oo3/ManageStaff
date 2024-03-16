@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\Search_image.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ClosedXML" Version="0.102.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ManageStaff.Domain\ManageStaff.Domain.csproj" />
+    <ProjectReference Include="..\ManageStaff.EF\ManageStaff.EF.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\Search_image.png" />
+  </ItemGroup>
+
+</Project>
